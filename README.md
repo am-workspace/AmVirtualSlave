@@ -1,4 +1,4 @@
-# AmVritualSlave
+# AmVirtualSlave
 
 工业虚拟从站模拟器，为网关（AmGateway）提供完整的测试环境。模拟工业温压流量控制器，同时暴露 Modbus TCP/RTU、OPC UA、MQTT 三种协议，支持多实例并行运行。
 
@@ -6,7 +6,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                  AmVritualSlave                     │
+│                  AmVirtualSlave                     │
 │                                                     │
 │  ┌─────────────┐    ┌──────────────────────────┐   │
 │  │ Generator   │───▶│       SharedData          │   │
@@ -102,8 +102,8 @@ Industrial/
 ### 单实例运行
 
 ```bash
-cd AmVritualSlave
-dotnet run --project AmVritualSlave
+cd AmVirtualSlave
+dotnet run --project AmVirtualSlave
 ```
 
 默认启动 Modbus(:5020) + OPC UA(:4840)，MQTT 关闭。
@@ -115,14 +115,14 @@ dotnet run --project AmVritualSlave
 start-slaves.bat
 
 # 方式2：指定配置文件
-dotnet run --project AmVritualSlave -- --config appsettings.SlaveA.json
-dotnet run --project AmVritualSlave -- --config appsettings.SlaveB.json
+dotnet run --project AmVirtualSlave -- --config appsettings.SlaveA.json
+dotnet run --project AmVirtualSlave -- --config appsettings.SlaveB.json
 
 # 方式3：环境变量覆盖
 set AMVS_Modbus__Port=5021
 set AMVS_Modbus__SlaveId=2
 set AMVS_OpcUa__Port=4841
-dotnet run --project AmVritualSlave
+dotnet run --project AmVirtualSlave
 
 # 停止所有实例
 stop-slaves.bat
@@ -151,8 +151,8 @@ stop-slaves.bat
   "OpcUa": {
     "Enabled": true,
     "Port": 4840,
-    "ApplicationName": "AmVritualSlave",
-    "ApplicationUri": "urn:localhost:AmVritualSlave"
+    "ApplicationName": "AmVirtualSlave",
+    "ApplicationUri": "urn:localhost:AmVirtualSlave"
   },
   "Mqtt": {
     "Enabled": false,       // 默认关闭，设备通常不支持MQTT
@@ -176,13 +176,13 @@ stop-slaves.bat
 ## 项目结构
 
 ```
-AmVritualSlave/
-├── AmVritualSlave/              # 主程序入口
+AmVirtualSlave/
+├── AmVirtualSlave/              # 主程序入口
 │   ├── Program.cs               # 启动配置、DI、环境变量支持
 │   ├── appsettings.json         # 默认配置
 │   ├── appsettings.SlaveA.json  # 从站A配置
 │   └── appsettings.SlaveB.json  # 从站B配置
-├── AmVritualSlave.Core/         # 核心库
+├── AmVirtualSlave.Core/         # 核心库
 │   ├── SharedData.cs            # 线程安全数据中心
 │   ├── RegisterMap.cs           # 寄存器地址定义
 │   ├── GeneratorService.cs      # 数据生成器

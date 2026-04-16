@@ -5,7 +5,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AmVritualSlave.Core
+namespace AmVirtualSlave.Core
 {
     /// <summary>
     /// 数据生成服务：后台持续产生模拟传感器数据。

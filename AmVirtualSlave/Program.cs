@@ -1,4 +1,4 @@
-﻿using AmVritualSlave.Core;
+﻿using AmVirtualSlave.Core;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -8,7 +8,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace AmVritualSlave
+namespace AmVirtualSlave
 {
     /// <summary>
     /// 虚拟从站模拟器入口：配置依赖注入并启动后台服务。
@@ -93,7 +93,7 @@ namespace AmVritualSlave
                     return;
                 }
 
-                _log.Information("=== AmVritualSlave Starting ===");
+                _log.Information("=== AmVirtualSlave Starting ===");
                 _log.Information("Loaded Config: Port={Port}, SlaveId={Id}, Mode={Mode}",
                     appSettings.Modbus.Port,
                     appSettings.Modbus.SlaveId,

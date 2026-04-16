@@ -1,4 +1,4 @@
-# AmVritualSlave 改进计划
+# AmVirtualSlave 改进计划
 
 ## 三阶段路线图
 

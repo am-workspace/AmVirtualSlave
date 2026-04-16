@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AmVritualSlave.Core
+namespace AmVirtualSlave.Core
 {
     /// <summary>
     /// MQTT Publisher 服务：将 SharedData 数据发布到 MQTT Broker，支持配置热重载。
@@ -174,7 +174,7 @@ namespace AmVritualSlave.Core
                     var settings = _currentMqttConfig;
                     var optionsBuilder = new MqttClientOptionsBuilder()
                         .WithTcpServer(settings.Broker, settings.Port)
-                        .WithClientId($"AmVritualSlave_{Guid.NewGuid():N}")
+                        .WithClientId($"AmVirtualSlave_{Guid.NewGuid():N}")
                         .WithCleanSession();
 
                     if (!string.IsNullOrEmpty(settings.Username))
@@ -210,7 +210,7 @@ namespace AmVritualSlave.Core
 
             var optionsBuilder = new MqttClientOptionsBuilder()
                 .WithTcpServer(settings.Broker, settings.Port)
-                .WithClientId($"AmVritualSlave_{Guid.NewGuid():N}")
+                .WithClientId($"AmVirtualSlave_{Guid.NewGuid():N}")
                 .WithCleanSession();
 
             if (!string.IsNullOrEmpty(settings.Username))

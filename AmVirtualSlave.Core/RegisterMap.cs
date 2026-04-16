@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace AmVritualSlave.Core
+namespace AmVirtualSlave.Core
 {
     /// <summary>
     /// 寄存器映射元数据：用于描述每个寄存器的详细信息，方便生成文档。

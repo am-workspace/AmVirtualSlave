@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AmVritualSlave.Core
+namespace AmVirtualSlave.Core
 {
     /// <summary>
     /// 时间服务接口：用于替代 Task.Delay 和 DateTime.UtcNow，方便单元测试

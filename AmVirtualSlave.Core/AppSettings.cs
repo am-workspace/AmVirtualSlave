@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace AmVritualSlave.Core
+namespace AmVirtualSlave.Core
 {
     /// <summary>
     /// 应用配置映射类（精简版，去除 HMI 专用配置）
@@ -60,8 +60,8 @@ namespace AmVritualSlave.Core
     {
         public bool Enabled { get; set; } = false;
         public int Port { get; set; } = 4840;
-        public string ApplicationName { get; set; } = "AmVritualSlave";
-        public string ApplicationUri { get; set; } = "urn:localhost:AmVritualSlave";
+        public string ApplicationName { get; set; } = "AmVirtualSlave";
+        public string ApplicationUri { get; set; } = "urn:localhost:AmVirtualSlave";
     }
 
     public class MqttSettings

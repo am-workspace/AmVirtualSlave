@@ -10,7 +10,7 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AmVritualSlave.Core
+namespace AmVirtualSlave.Core
 {
     /// <summary>
     /// Modbus 服务器服务：支持 TCP 和 RTU 串口模式，响应上位机读写请求，支持配置热重载。

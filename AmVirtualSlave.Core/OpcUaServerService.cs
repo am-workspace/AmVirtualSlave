@@ -11,7 +11,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AmVritualSlave.Core
+namespace AmVirtualSlave.Core
 {
     /// <summary>
     /// OPC UA Server 服务：将 SharedData 暴露为 OPC UA 节点，支持 Subscription 订阅推送。
@@ -180,7 +180,7 @@ namespace AmVritualSlave.Core
                     {
                         StoreType = CertificateStoreType.Directory,
                         StorePath = certPath,
-                        SubjectName = $"CN={applicationName}, O=AmVritualSlave, C=CN"
+                        SubjectName = $"CN={applicationName}, O=AmVirtualSlave, C=CN"
                     },
                     TrustedPeerCertificates = new CertificateTrustList
                     {
@@ -349,7 +349,7 @@ namespace AmVritualSlave.Core
         {
             return new ServerProperties
             {
-                ManufacturerName = "AmVritualSlave",
+                ManufacturerName = "AmVirtualSlave",
                 ProductName = "Virtual Slave OPC UA Server",
                 ProductUri = "http://amvirtualslave.org",
                 SoftwareVersion = "2.0.0",

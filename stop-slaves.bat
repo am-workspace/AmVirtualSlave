@@ -1,6 +1,6 @@
 @echo off
 echo ============================================================
-echo  AmVritualSlave - Stopping all instances
+echo  AmVirtualSlave - Stopping all instances
 echo ============================================================
 echo.
 

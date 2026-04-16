@@ -4,8 +4,8 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>AmVritualSlave.Core</RootNamespace>
-    <AssemblyName>AmVritualSlave.Core</AssemblyName>
+    <RootNamespace>AmVirtualSlave.Core</RootNamespace>
+    <AssemblyName>AmVirtualSlave.Core</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

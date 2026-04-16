@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AmVirtualSlave/AmVirtualSlave.csproj" />
+  <Project Path="AmVirtualSlave.Core/AmVirtualSlave.Core.csproj" />
+</Solution>

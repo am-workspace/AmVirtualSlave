@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AmVritualSlave.Core\AmVritualSlave.Core.csproj" />
+    <ProjectReference Include="..\AmVirtualSlave.Core\AmVirtualSlave.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

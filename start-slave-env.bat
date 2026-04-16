@@ -1,6 +1,6 @@
 @echo off
 echo ============================================================
-echo  AmVritualSlave - Environment Variable Mode
+echo  AmVirtualSlave - Environment Variable Mode
 echo ============================================================
 echo.
 echo  This demonstrates using AMVS_ environment variables
@@ -13,7 +13,7 @@ echo.
 set AMVS_Modbus__Port=5020
 set AMVS_Modbus__SlaveId=1
 set AMVS_OpcUa__Port=4840
-set AMVS_OpcUa__ApplicationName=AmVritualSlave-A
+set AMVS_OpcUa__ApplicationName=AmVirtualSlave-A
 set AMVS_Mqtt__TopicPrefix=industrial/slaveA
 
-dotnet run --project AmVritualSlave
+dotnet run --project AmVirtualSlave
