@@ -275,8 +275,8 @@ namespace AmVirtualSlave.Core
                     _log.Information("[OpcUa] Using existing certificate from: {Path}", existingCerts[0]);
 
                     //var cert = X509CertificateLoader.LoadCertificate();
-                    var cert = X509CertificateLoader.LoadCertificateFromFile(existingCerts[0]);
-                    //var cert = new X509Certificate2(existingCerts[0]);
+                    //var cert = X509CertificateLoader.LoadCertificateFromFile(existingCerts[0]);
+                    var cert = new X509Certificate2(existingCerts[0]);
 
                     config.SecurityConfiguration.ApplicationCertificate.Certificate = cert;
 
